@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using ProductoAPI.Models;
+using StackExchange.Redis;
 
 namespace ProductoAPI
 {
@@ -14,6 +15,16 @@ namespace ProductoAPI
             builder.Services.AddDbContext<ProductoContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+            builder.Services.AddStackExchangeRedisOutputCache(opciones =>
+            {
+                opciones.Configuration = builder.Configuration.GetConnectionString("redis");
+            });
+            builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+            {
+                var configuration = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("redis"), true);
+                return ConnectionMultiplexer.Connect(configuration);
+            });
+            builder.Services.AddOutputCache();
             // Add services to the container.
 
             builder.Services.AddControllers();
@@ -31,6 +42,8 @@ namespace ProductoAPI
             }
 
             app.UseHttpsRedirection();
+
+            app.UseOutputCache();
 
             app.UseAuthorization();
 

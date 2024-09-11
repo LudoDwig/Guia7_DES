@@ -503,3 +503,10 @@ C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\obj\Debug\net8.0\ref
 C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\obj\Debug\net8.0\ProductoAPI.pdb
 C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\obj\Debug\net8.0\ProductoAPI.genruntimeconfig.cache
 C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\obj\Debug\net8.0\ref\ProductoAPI.dll
+C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\bin\Debug\net8.0\Microsoft.AspNetCore.OutputCaching.StackExchangeRedis.dll
+C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\Ludwig\Desktop\Guia7Des\guia-7des-main\ProductoAPI\obj\Debug\net8.0\ProductoAPI.sourcelink.json
